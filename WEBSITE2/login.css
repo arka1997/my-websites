@@ -1,0 +1,93 @@
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+background-color: #FEFFED;
+padding: 40px 40px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+.container{
+width: 800px;
+height: 610px;
+margin:70px auto;
+margin-left:40%;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+width: 500px;
+height:540px;
+padding: 10px 50px 25px;
+border: 2px solid blue;
+border-radius: 10px;
+font-family: raleway;
+float:left;
+margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 20px;
+}
+body {
+  font-family: cursive;
+}
+.glow {
+  font-size: 80px;
+  color: #66ff66;
+  text-align: center;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,0 0 30px #fff,0 0 40px #fff,0 0 50px #fff,0 0 60px #fff,0 0 70px #fff,
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6
+  }
+}
+label{
+color: #;
+text-shadow: 0 1px 0 #fff;
+font-size: 20px;
+font-weight: bold;
+}
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 3px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 50%;
+border-radius: 10px;
+padding: 15px 0;
+outline:none;
+margin-left:120px;
+}
+input[type=button]:hover{
+background: linear-gradient(lightgreen 5%, #ffbc00 100%);
+}
+#img1 {
+  width: 170px;
+  height: 150px;
+  position: relative;
+  animation: mymove 9s infinite;
+}
+
+@keyframes mymove {
+  from {left: 50px;}
+  to {left: 90%;}
+}
+h3{
+color:yellow;
+font-size:40px;
+}

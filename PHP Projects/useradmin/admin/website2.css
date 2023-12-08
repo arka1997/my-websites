@@ -1,0 +1,267 @@
+body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+#kk{
+	float:left;
+	padding:16px;
+	margin-top:0;
+	margin-left:100px;
+	width:20%;
+}
+#ll{
+	float:right;
+	margin-right:90px;
+margin-top:-8px;
+
+}
+ul li{
+	float:right;
+	margin-left:50px;
+	margin-top:15px;
+	list-style-type:none;
+}
+.navi{
+	text-decoration:none;
+	color:black;
+}
+.navi:hover{
+color:#66ffd9;
+}
+#nn{
+position:relative;
+}
+#oo{
+width:400px;
+height:500px;
+position:absolute;
+bottom:60px;
+margin-left:100px;
+text-shadow: 1px 0.5px black;
+color:#ffff;
+font-weight:bold;
+}
+#pp{
+font-size:20px;
+color:#00264d;
+}
+
+#btn1{
+padding:10px;
+background-color:orange;
+border-width:1px;
+border: 2px solid #e68a00;
+    border-bottom-width: 2px;
+    border-bottom-color: #e68a00;
+	outline:none;
+}
+#btn1:hover{
+color:#66ffd9;
+background-color:#ff4d4d;
+}
+#size{
+font-size:40px;
+bottom:30px;
+}
+section{
+text-align:center;
+float:left;
+width:100%;
+height:500px;
+background-color:#ffff;
+}
+aside{
+margin-top:60px;
+width:50%;
+height:400px;
+float:left;
+
+}
+article{
+width:30%;
+height:350px;
+float:right;
+position:absolute;
+margin-top:100px;
+margin-left:700px;
+
+}
+
+#btn2{
+padding:15px;
+background-color:#00cc00;
+border-radius:7px;
+border-width:1px;
+width:160px;
+outline:none;
+}
+#btn2:hover{
+color:crimson;
+}
+#rr{
+text-align:center;
+}
+#tt{
+text-align:justify;
+}
+#uu{
+	height:850px;
+	background-color:#e6ffe6;
+	text-align:center;
+}
+.card{
+	float:left;
+	margin-left:80px;
+}
+.qq{
+	margin-left:30px;
+	height:200px;
+	width:284px;
+}
+.qq:hover{
+	opacity:50%;
+	margin-left:30px;
+}
+.template-header{
+	width:284px;
+	margin-left:30px;
+}
+#im{
+	margin-left:600px;
+	}
+.container{
+	margin-left:145px;
+	background-color:yellow;
+}
+.container2{
+	width:100%;
+	height:220px;
+background-color:120 	#ffffff	rgb(255, 255, 255)	hsl(180, 200%, 100%);
+position:relative;
+}
+.btn3{
+	position:absolute;
+	top:0;
+  display: inline-block;
+  padding: 12px 21px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9900cc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 9px #999;
+  margin-left:550px;
+  margin-top:80px;
+}
+
+.btn3:hover {background-color: #3e8e41}
+
+.btn3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#img4{
+	position:absolute;
+	top:30px;
+	bottom:20px;
+	transition:width 1s,transform 4s;
+	animation-name:example;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	margin-left:890px;
+	border:2px solid black;
+	border-radius:40px;
+}
+#img4:hover{
+	width:190px;
+	height:150px;
+	transform:rotate(360deg);
+}
+@keyframes example{
+	0% {background-color:purple ;left:0; }
+	        36%	{background-color:red; left:0px ;}  
+	
+	25% {background-color:yellow;left:170px;}                                                                                                                                                
+}
+	#img5{
+		position:absolute;
+	top:24px;
+	margin-left:100px;
+	transition:transform 5s;
+	transform:rotate(-360deg);
+		border-radius:80px;
+		animation:spin 4s linear infinite;
+}
+@keyframes spin{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-360deg);}
+
+}
+#container3{
+	position:relative;
+	width:100%;
+	height600px;
+	background-color:#e6e6e6;
+		font-size:10px;
+		float:left;
+}
+#fgh{
+			text-align:center;
+}
+.img6{
+	width:160px;
+	height:200px;
+	float:left;
+	margin-left:100px;
+}
+#box2{
+	float:right;
+	margin-right:0px;
+}
+#posi{
+	margin-top:0px;
+	margin-left:850px;
+}
+.loader {
+margin-left:200px;
+margin-bottom:10px;
+
+position:absolute;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid red;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+.loader1 {
+position:absolute;
+margin-left:-10px;
+margin-left:200px;
+
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid yellow;
+  border-bottom: 16px solid green;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin1 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { transform: rotateX(360deg); }
+}
+
+@keyframes spin1 {
+  0% { transform:  rotateY(360deg) ; }
+
+}
+	

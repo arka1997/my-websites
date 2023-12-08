@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px; }
+
+.inner {
+  display: block;
+  background: rgba(0, 0, 0, 0.25);
+  outline: 2px solid rgba(0, 0, 0, 0.25);
+  outline-offset: -2px;
+  padding: 10px; }
+
+.inner:before {
+  display: block;
+  content: " ";
+  padding-top: 56%; }
+
+@media (min-width: 1200px) {
+  .items {
+    margin-bottom: 20px; }
+
+  .item {
+    float: left;
+    width: calc(100% / 6); } }
+
+/*# sourceMappingURL=demo.css.map */

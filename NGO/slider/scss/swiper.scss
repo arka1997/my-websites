@@ -1,0 +1,61 @@
+.swiper-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-swipe-natural] {
+  &::after {
+    display: table;
+    content: ' ';
+    clear: both;
+  }
+}
+
+.swiper-prev,
+.swiper-next {
+  position: absolute;
+  z-index: 1;
+  margin-top: -22px;
+  width: 44px;
+  height: 0;
+  padding-top: 44px;
+  overflow: hidden;
+  background: #000;
+  border: none;
+  top: 50%;
+
+  &.is-hidden {
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+  }
+}
+
+.swiper-prev {
+  left: 0;
+}
+
+.swiper-next {
+  right: 0;
+}
+
+.swiper-prev__content,
+.swiper-next__content {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+}

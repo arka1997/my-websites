@@ -1,0 +1,14 @@
+{
+  "name": "vanillaSwiper",
+  "description": "Vanilla JS alternative to slideshows. Using native scrolling divs and adding buttons for desktop.",
+  "version": "1.2.1",
+  "homepage": "https://github.com/perfectwebteam/vanillaSwiper",
+  "author": "Perfect Web Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perfectwebteam/vanillaSwiper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/perfectwebteam/vanillaSwiper/issues"
+  }
+}

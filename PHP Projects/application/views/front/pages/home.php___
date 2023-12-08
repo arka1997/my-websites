@@ -1,0 +1,413 @@
+<div class="page_slider menu_transparent">
+    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:#000000;padding:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.8.3 fullscreen mode -->
+        <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.3">
+            <ul>
+            <?php $j=0; ?>
+                <?php foreach($image as $key=>$i) { ?>
+                <!-- SLIDE  -->
+                <li data-index="rs-<?=$key?>" data-transition="zoomout" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="<?php echo base_url('uploads/banner/'.$i->images)?>" data-rotate="0" data-saveperformance="off" data-title="<?=$i->id?>" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="<?php echo base_url('uploads/banner/'.$i->images)?>" alt="" title="1600&#215;1200-1" width="1600" height="1200" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+                    <!-- LAYERS -->
+                    
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption pp_subheader   tp-resizeme" id="slide-<?=++$key?>-layer-<?=++$j?>" data-x="center" data-hoffset="" data-y="bottom" data-voffset="300" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":600,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; color: #ffffff; font-family:Open Sans;font-style:italic;border-color:rgb(255,255,255);border-width:0px 0px 2px 0px;"><?=$i->id?> </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption pp_header   tp-resizeme" id="slide-<?=$key?>-layer-<?=++$j?>" data-x="center" data-hoffset="" data-y="bottom" data-voffset="180" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1300,"speed":600,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; "><h1><b><?=$i->details?></b></h1> </div>
+                    
+                   
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption pp_content   tp-resizeme" id="slide-<?=$key?>-layer-<?=++$j?>" data-x="center" data-hoffset="" data-y="bottom" data-voffset="100" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; ">Arctic temperatures and several meters of snow</div>
+                    
+                    <div class="tp-caption pp_content   tp-resizeme" id="slide-<?=$key?>-layer-<?=++$j?>" data-x="center" data-hoffset="" data-y="bottom" data-voffset="100" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1600,"speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; "> 
+                                <a class="button medium left" style="background-color:#f4ae40 !important;color:#ffffff !important;border:1px solid #f4ae40 !important;margin-right:10px;margin-bottom:10px;">Explore</a></div>
+                </li>
+                <?php } ?>
+                
+               </ul>
+
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+
+
+    </div>
+    <!-- END REVOLUTION SLIDER -->
+</div>
+
+<div class="ppb_wrapper  ">
+    <div class="one pp_tour_search">
+        <div class="page_content_wrapper">
+            <form id="tour_search_form"  method="post" action="<?php echo base_url();?>front/cms/show_images" enctype="multipart/form-data">
+                <!-- <div class="tour_search_wrapper">
+                    <div class="one_fourth">
+                        <label class="one_fourth" for="keyword">Planned Destination(s)</label>
+                         <div class="select2-purple">
+                        <select class="select2" name="destination_ids[]" multiple="multiple" data-placeholder="Select Destination names for package" data-dropdown-css-class="select2-purple" style="width: 100%;">
+                          <?php foreach($destination as $d){ ?>
+                          <option value="<?=$d->id?>"><?=$d->destination_name?></option>
+                          <?php } ?>
+                        </select>
+                      </div> -->
+                      
+                      <!-- <input id="keyword" name="destination_package" type="text" placeholder="Enter Destination / Packages">
+                    </div>
+                    <div class="one_fourth">
+                        <label for="start_date">Travel Dates</label>
+                        <div class="start_date_input">
+                            <input id="start_date" name="start_date" type="text" placeholder="Departure">
+                            <input id="start_date_raw" name="start_date_raw" type="hidden">
+                            <i class="fa fa-calendar"></i>
+                        </div><div class="one_fourth">
+                                    <label for="keyword">Destination</label>
+                                    <input id="keyword" name="keyword" type="text" placeholder="City, region or keywords">
+                                </div>
+                        
+                        <div class="end_date_input">
+                            <input id="end_date" name="end_date" type="text" placeholder="Return">
+                            <input id="end_date_raw" name="end_date_raw" type="hidden">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                    <div class="one_fourth">
+                        <label for="budget">Est. Budget (In Rs)</label>
+                        <input id="budget" name="cost" type="text" placeholder="USD EX. 100">
+                    </div>
+                    <div class="">
+                        <button  class="btn btn-primary" type="submit" style="background-color:#f4ae40 !important;color:#ffffff !important;border:1px solid #f4ae40 !important;margin-right:10px;margin-bottom:10px;" >Search</button>
+                    </div>
+                </div> --> 
+                <!--  -->
+                <div class="tour_search_wrapper">
+                                <div class="one_fourth">
+                                    <label for="destination_package">Destination(s)/Packages</label>
+                                    <input id="destination_package" name="destination_package" type="text" placeholder="Enter Destination / Packages">
+                                </div>
+                                <div class="one_fourth">
+                                    <label for="start_date">Travel Dates</label>
+                                    <div class="start_date_input">
+                                        <input id="start_date" name="start_date" type="text" placeholder="Departure">
+                                        <!-- <input id="start_date_raw" name="start_date_raw" type="hidden"> -->
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div class="end_date_input">
+                                        <input id="end_date" name="end_date" type="text" placeholder="Return">
+                                        <!-- <input id="end_date_raw" name="end_date_raw" type="hidden"> -->
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                                <div class="one_fourth">
+                                    <label for="cost">Est. Budgets(In Rs)</label>
+                                    <input id="cost" name="cost" type="text" placeholder="USD EX. 100">
+                                </div>
+                                <div class="one_fourth last">
+                                    <input id="tour_search_btn" type="submit" value="Search">
+                                </div>
+                            </div>
+            </form>
+        </div>
+    </div>
+    <div class="ppb_tour one withpadding " style="border-top:1px solid #e1e1e1;">
+        <div class="page_content_wrapper full_width" style="text-align:center">
+            <h2 class="ppb_title">People'Choice</h2>
+            <div class="page_caption_desc pb20">Check out our best promotion tours</div>
+            <div class="portfolio_filter_wrapper three_cols fullwidth shortcode gallery section content clearfix">
+                
+            <?php foreach($packages as $key=>$p) {
+                if($key== 8){
+                    break;
+                } 
+                else{ ?>
+                <div class="element portfolio3filter_wrapper">
+                    <div class="one_third gallery3 filterable gallery_type animated<?=$key?>">
+                        <a href="east-europe.html">
+                            <img src="<?php echo base_url('uploads/package/'.$p->file)?>" alt="">
+                        </a>
+                        <a href="east-europe.html" class="portanchor"><div class="thumb_content fullwidth ">
+                            <div class="thumb_title">
+                                <div class="tour_country">
+                                    Turkey
+                                </div>
+                                <h3><?=$p->package_name?></h3>
+                            </div>
+                            <div class="thumb_meta">
+                                <div class="tour_days">
+ Days
+                                </div>
+                                <div class="tour_price">
+                                <?=$p->cost?>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+            </div>
+                <?php }} ?>                        
+            </div>
+        </div>
+        <a href="<?php echo base_url();?>front/cms/load_packages" class="button medium center" style="background-color:#f4ae40 !important;color:#ffffff !important;border:1px solid #f4ae40 !important;margin-right:10px;margin-bottom:10px;">Explore</a></div>
+      </div>
+            
+    <div class="one withsmallpadding ">
+        <div class="page_content_wrapper pt20" style="text-align:center">
+            <h2 class="ppb_title">What Customers Say</h2>
+            <br>
+            <div class="testimonial_slider_wrapper">
+                <div class="flexslider" data-height="750">
+                    <ul class="slides">
+                        <?php foreach($comments as $c){ ?>
+                        <li>
+                            <div class="testimonial_slider_wrapper"><?=$c->testimonial_details?>
+                                <div class="testimonial_slider_meta">
+                                    <h6><?php $c->customer_name ?></h6>
+                                    <div class="testimonial_slider_meta_position"><?=$c->position?></div>-
+                                    <div class="testimonial_slider_meta_company"><a href="#" target="_blank"><?=$c->company?></a></div>
+                                </div>
+                            </div>
+                        </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one withsmallpadding withbg fullwidth parallax" style="height:600px;" data-image="<?php echo base_url('uploads/package/'.$p->file)?>" data-width="1600" data-height="1200">
+        <div class="page_content_wrapper"></div>
+    </div>
+    <div class="one withsmallpadding pt80 pb80">
+        <div class="page_content_wrapper">
+            <div style="text-align:center">
+                <h2 class="ppb_title">LAHOUL SPITI, YOU WILL BE IN LOVE</h2>
+                <div class="page_caption_desc"></div>
+            </div>
+            <div class="two_third paragraphs">
+                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ulla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla</p>
+            </div>
+            <div class="one_third last">
+                <blockquote>
+                    <i>&#8220;It was fantastic going on the sled to see the views on the mountains! And the action of it – I loved going fast!&#8221;</i>
+                </blockquote>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="one withsmallpadding withbg parallax " data-image="<?php echo base_url('uploads/package/'.$p->file)?>" data-width="1600" data-height="1200">
+        <div class="page_content_wrapper pt40" style="text-align:center">
+            <h2 class="ppb_title">Why Choose Us</h2>
+            <div style="height:20px"></div>
+            <br>
+            <div class="service_content_wrapper ">
+                <div class="one_third ">
+                    <div class="service_wrapper">
+                        <div class="service_icon"><i class="fa fa-star"></i></div>
+                        <div class="service_title">
+                            <h3>Handpicked Hotels</h3>
+                            <div class="service_content">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                                <br>
+                                <br>
+                                <a href="paris.html">learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_third ">
+                    <div class="service_wrapper">
+                        <div class="service_icon"><i class="fa fa-globe"></i></div>
+                        <div class="service_title">
+                            <h3>World Class Service</h3>
+                            <div class="service_content">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                                <br>
+                                <br>
+                                <a href="paris.html">learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one_third last">
+                    <div class="service_wrapper">
+                        <div class="service_icon"><i class="fa fa-thumbs-up"></i></div>
+                        <div class="service_title">
+                            <h3>Best Price Guarantee</h3>
+                            <div class="service_content">Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+                                <br>
+                                <br>
+                                <a href="paris.html">learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+                <br class="clear">
+                <br>
+            </div>
+            <br class="clear">
+        </div>
+    </div>
+    <div class="one withsmallpadding " style="background:#f3f3f3;">
+        <div class="page_content_wrapper pt20">
+            <div class="one_fourth">
+                <div class="animate_counter_wrapper"><i class="fa fa-smile-o"></i>
+                    <br>
+                    <div id="1584612796597484876" class="odometer" style="font-size:44px;line-height:44px;">0</div>
+                    <div class="count_separator"><span></span></div>
+                    <div class="counter_subject">Happy Customers</div>
+                </div>
+            </div>
+            <div class="one_fourth">
+                <div class="animate_counter_wrapper"><i class="fa fa-bus"></i>
+                    <br>
+                    <div id="1584612796254376806" class="odometer" style="font-size:44px;line-height:44px;">0</div>
+                    <div class="count_separator"><span></span></div>
+                    <div class="counter_subject">Amazing Tours</div>
+                </div>
+            </div>
+            <div class="one_fourth">
+                <div class="animate_counter_wrapper"><i class="fa fa-briefcase"></i>
+                    <br>
+                    <div id="1584612796413307740" class="odometer" style="font-size:44px;line-height:44px;">0</div>
+                    <div class="count_separator"><span></span></div>
+                    <div class="counter_subject">In Business</div>
+                </div>
+            </div>
+            <div class="one_fourth last">
+                <div class="animate_counter_wrapper"><i class="fa fa-comments-o"></i>
+                    <br>
+                    <div id="1584612796678726464" class="odometer" style="font-size:44px;line-height:44px;">0</div>
+                    <div class="count_separator"><span></span></div>
+                    <div class="counter_subject">Support Cases</div>
+                </div>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="one withsmallpadding withbg " style="background-image:url(<?=base_url()?>assets/front/theme/upload/1600x1200-15.jpg);background-size:cover;margin-top:-1px;">
+        <div class="page_content_wrapper fullwidth pt20" style="text-align:center">
+            <h2 class="ppb_title">DESTINATIONS AT A &amp; GLANCE</h2>
+            <!-- <div class="page_caption_desc">Our latest news &#038; promotions</div> -->
+            <div id="blog_grid_wrapper" class="sidebar_content full_width ppb_blog_posts" style="text-align:left">
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/s01-1024x682.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Standard Blog Post With Image"><h6>Standard Blog Post With Image</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 28, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/1600x1200-8-1024x768.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Amazing Fullwidth Post"><h6>Amazing Fullwidth Post</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 26, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/1600x1200-4-1024x768.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Link Post"><h6>Link Post</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 19, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/1600x1200-9-1024x768.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Quote Post"><h6>Quote Post</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 18, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/paris-opera-night-france-hd-widescreen-wallpapers-1024x640.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Sidebar Post With Slideshow"><h6>Sidebar Post With Slideshow</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;June 26, 2013
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/Ermin-Celikovic-1024x682.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Duis vestibulum quis quam"><h6>Duis vestibulum quis quam</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;June 22, 2011
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/1600x1200-12-1024x768.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Vimeo Video Post"><h6>Vimeo Video Post</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;June 22, 2011
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/paris-cityscapes_00411691-1024x576.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Link Post2"><h6>Link Post2</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 28, 2011
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/s01-1024x682.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Standard Blog Post With Image"><h6>Standard Blog Post With Image</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 28, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post type-post hentry status-publish">
+                    <div class="post_wrapper grid_layout" style="background-image:url('<?=base_url()?>assets/front/theme/upload/1600x1200-8-1024x768.jpg');">
+                        <div class="parallax_overlay_header"></div>
+                        <div class="grid_wrapper">
+                            <div class="post_header grid"><a href="standard-blog-post-with-image.html" title="Amazing Fullwidth Post"><h6>Amazing Fullwidth Post</h6></a>
+                                <div class="post_detail">
+                                    On&nbsp;May 26, 2014
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+            <br class="clear">
+        </div>
+    </div>
+</div>
+
+</div>

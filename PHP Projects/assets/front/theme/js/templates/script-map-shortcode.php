@@ -1,0 +1,2 @@
+
+jQuery(document).ready(function(){ jQuery("#map1584612854523622535").gMap({markers: [ { latitude: 51.508823, longitude: -0.127802, html: "London, UK", popup: true} ], maptype: google.maps.MapTypeId.ROADMAP,zoom: 8}); });
